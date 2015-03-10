@@ -1,0 +1,22 @@
+﻿<template>
+  <style>
+    #hidden_file_obj {
+      position:absolute;
+      display:none;
+      z-index:-1;
+    }
+    
+    #open_button {
+      width: 48px;
+      height: 48px;
+      margin: 5px;
+    }
+  </style>
+  <input type="button" id="open_button"/>
+  <input type="file" id="hidden_file_obj"/>
+</template>
+
+<script type="text/javascript">
+  var importedHtml = document.querySelectAll('link[rel=import]');
+  console.log(importedHtml);
+</script>
